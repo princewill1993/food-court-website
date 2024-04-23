@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/288912a1bc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hero section -->
+
+    <header>
+      <nav class="navbar container" id="navbar">
+        <div class="navbar__logo">
+          <!-- <a href="#" class="logo"><i class="fas fa-utensils"></i>RESTO.</a> -->
+          <span><i class="fas fa-utensils"></i>RESTO.</span>
+          <!-- <span><i class="fas fa-utensils"></i></span> -->
+        </div>
+        <ul class="navbar__links">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#Dishes">Dishes</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Menu">Menu</a></li>
+          <li><a href="#Review">Review</a></li>
+          <li><a href="#Order">Order</a></li>
+        </ul>
+        <div class="navbar__icons">
+          <span class="menu_icon"><i class="bi bi-list"></i></span>
+          <span><i class="bi bi-search"></i></span>
+          <span><i class="bi bi-balloon-heart-fill"></i></span>
+          <span><i class="bi bi-cart-fill"></i></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile menu -->
+
+    <!-- <div class="mobile__menu">
+        <nav class="mobile__nav container">
+          <span>
+            <a class="active-menu" href="#">Home</a>
+          </span>
+          <span>
+            <a href="#">Home</a>
+          </span>
+          <span>
+            <a href="#">Home</a>
+          </span>
+          <span>
+            <a href="#">Home</a>
+          </span>
+          <span>
+            <a href="#">Home</a>
+          </span>
+        </nav>
+      </div>
+   -->
+    <section id="hero" class="hero">
+      <swiper-container
+        class="hero__content container"
+        pagination="true"
+        pagination-clickable="true"
+        navigation="false"
+        space-between="30"
+        centered-slides="true"
+        autoplay-delay="2500"
+        autoplay-disable-on-interaction="false"
+      >
+        <swiper-slide class="hero__wrapper">
+          <div class="left">
+            <h5 class="label-text">Our special dish</h5>
+            <h2 class="title-text hero--title">Fried Chicken</h2>
+            <p class="hero__paragraph hero--paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              excepturi! .
+            </p>
+            <button class="btn btn--primary">Order now</button>
+          </div>
+          <div class="right">
+            <img class="hero__image" src="image1.png" alt="" />
+          </div>
+        </swiper-slide>
+        <swiper-slide class="hero__wrapper">
+          <div class="left">
+            <h5 class="label-text">Our special dish</h5>
+            <h2 class="title-text hero--title">Fried Chicken</h2>
+            <p class="hero__paragraph hero--paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              excepturi! .
+            </p>
+            <button class="btn btn--primary">Order now</button>
+          </div>
+          <div class="right">
+            <img class="hero__image" src="image2.png" alt="" />
+          </div>
+        </swiper-slide>
+        <swiper-slide class="hero__wrapper">
+          <div class="left">
+            <h5 class="label-text">Our special dish</h5>
+            <h2 class="title-text hero--title">Fried Chicken</h2>
+            <p class="hero__paragraph hero--paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              excepturi! .
+            </p>
+            <button class="btn btn--primary">Order now</button>
+          </div>
+          <div class="right">
+            <img class="hero__image" src="image3.png" alt="" />
+          </div>
+        </swiper-slide>
+      </swiper-container>
+    </section>
+
+    <!-- popular Dishes -->
+
+    <section id="" class="popular_dishes">
+      <div class="popular_dishes_content container">
+        <div class="popular_dishes_titles">
+          <p class="label-text">Our dishes</p>
+          <h3 class="subtitle-text">Pouplar dishes</h3>
+        </div>
+        <div class="popular_dishes_cardwrapper">
+          <div class="card popular_dishes_card">
+            <div class="popular_dishes_icons">
+              <span class="left">
+                <i class="bi bi-eye-fill"></i>
+              </span>
+              <span class="right">
+                <i class="bi bi-balloon-heart-fill"></i>
+              </span>
+            </div>
+
+            <div class="popular_dishes_imgwrapper">
+              <img class="popular_dishes_img" src="dish-1.png" alt="" />
+            </div>
+
+            <div class="popular_card_details">
+              <h3 class="">Burger</h3>
+              <div class="star_icon_wrapper">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+
+              <div class="price__btn">
+                <span class="label-text">$122.99</span>
+                <button class="btn btn--primary">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card popular_dishes_card">
+            <div class="popular_dishes_icons">
+              <span class="left">
+                <i class="bi bi-eye-fill"></i>
+              </span>
+              <span class="right">
+                <i class="bi bi-balloon-heart-fill"></i>
+              </span>
+            </div>
+
+            <div class="popular_dishes_imgwrapper">
+              <img class="popular_dishes_img" src="dish-2.png" alt="" />
+            </div>
+
+            <div class="popular_card_details">
+              <h3 class="">Burger</h3>
+              <div class="star_icon_wrapper">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+
+              <div class="price__btn">
+                <span class="label-text">$122.99</span>
+                <button class="btn btn--primary">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card popular_dishes_card">
+            <div class="popular_dishes_icons">
+              <span class="left">
+                <i class="bi bi-eye-fill"></i>
+              </span>
+              <span class="right">
+                <i class="bi bi-balloon-heart-fill"></i>
+              </span>
+            </div>
+
+            <div class="popular_dishes_imgwrapper">
+              <img class="popular_dishes_img" src="dish-3.png" alt="" />
+            </div>
+
+            <div class="popular_card_details">
+              <h3 class="">Burger</h3>
+              <div class="star_icon_wrapper">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+
+              <div class="price__btn">
+                <span class="label-text">$122.99</span>
+                <button class="btn btn--primary">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card popular_dishes_card">
+            <div class="popular_dishes_icons">
+              <span class="left">
+                <i class="bi bi-eye-fill"></i>
+              </span>
+              <span class="right">
+                <i class="bi bi-balloon-heart-fill"></i>
+              </span>
+            </div>
+
+            <div class="popular_dishes_imgwrapper">
+              <img class="popular_dishes_img" src="dish-4.png" alt="" />
+            </div>
+
+            <div class="popular_card_details">
+              <h3 class="">Burger</h3>
+              <div class="star_icon_wrapper">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+
+              <div class="price__btn">
+                <span class="label-text">$122.99</span>
+                <button class="btn btn--primary">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card popular_dishes_card">
+            <div class="popular_dishes_icons">
+              <span class="left">
+                <i class="bi bi-eye-fill"></i>
+              </span>
+              <span class="right">
+                <i class="bi bi-balloon-heart-fill"></i>
+              </span>
+            </div>
+
+            <div class="popular_dishes_imgwrapper">
+              <img class="popular_dishes_img" src="dish-5.png" alt="" />
+            </div>
+
+            <div class="popular_card_details">
+              <h3 class="">Burger</h3>
+              <div class="star_icon_wrapper">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+
+              <div class="price__btn">
+                <span class="label-text">$122.99</span>
+                <button class="btn btn--primary">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card popular_dishes_card">
+            <div class="popular_dishes_icons">
+              <span class="left">
+                <i class="bi bi-eye-fill"></i>
+              </span>
+              <span class="right">
+                <i class="bi bi-balloon-heart-fill"></i>
+              </span>
+            </div>
+
+            <div class="popular_dishes_imgwrapper">
+              <img class="popular_dishes_img" src="dish-6.png" alt="" />
+            </div>
+
+            <div class="popular_card_details">
+              <h3 class="">Burger</h3>
+              <div class="star_icon_wrapper">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+
+              <div class="price__btn">
+                <span class="label-text">$122.99</span>
+                <button class="btn btn--primary">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- why choose -->
+    <section id="why_choose" class="why_choose">
+      <div class="why_choose_wrapper container">
+        <div class="why_choose_titles">
+          <p class="label-text">About us</p>
+          <h2 class="subtitle--text">WHY CHOOSE US?</h2>
+        </div>
+        <div class="why_choose_content">
+          <div class="img__wrapper">
+            <img
+              src="https://veerendra19codes.github.io/Food-Order-Website/images/about-img.png"
+              alt=""
+            />
+          </div>
+          <div class="right__content">
+            <h2 class="subtitle-text">Best food in the country</h2>
+            <p class="why_choose_lorem">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              doloremque autem, cupiditate ut omnis tempora blanditiis doloribus
+              harum nostrum alias eius voluptas suscipit, sed eum temporibus<br />
+              <br />
+
+              quidem minus veniam! Porro? harum nostrum alias eius voluptas
+              suscipit, sed eum temporibus quidem minus veniam! Porro?
+            </p>
+
+            <div class="services">
+              <div class="service__card">
+                <span><i class="bi bi-truck"></i></span>
+                <div>
+                  <div>Free</div>
+                  <div>Delivery</div>
+                </div>
+              </div>
+              <div class="service__card">
+                <span><i class="bi bi-currency-dollar"></i></span>
+                <div>
+                  <div>Easy</div>
+                  <div>Payments</div>
+                </div>
+              </div>
+              <div class="service__card">
+                <span><i class="bi bi-headset"></i></span>
+                <div>
+                  <div>24/7</div>
+                  <div>Service</div>
+                </div>
+              </div>
+              <button class="btn btn--primary">Learn More</button>
+            </div>
+
+            <!-- <button class="btn btn--primary">Learn more</button> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- menu section -->
+
+    <section class="Our__Menu">
+      <div class="Menu__content container">
+        <div class="Menu__titles">
+          <p class="label-text">Our Menu</p>
+          <h3 class="subtitle-text">TODAY'S SPECIALITY</h3>
+        </div>
+        <div class="Menu__Cardwrapper">
+          <div class="card menu__card">
+            <div class="menu__imgwrapper">
+              <img class="menu__imgburger" src="menu-1.jpg" alt="burger" />
+            </div>
+            <div class="menu__icon">
+              <span class="right">
+                <i class="bi bi-balloon-heart-fill"></i>
+              </span>
+            </div>
+            <div class="menu__card__details">
+              <div class="star_icon_wrapper">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h2>Delicious Food</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+                maxime quia vel placeat alias impedit optio facilis quos, nihil
+                velit? Lorem, ipsum dolor sit amet consectetur adipisicing
+              </p>
+              <button class="btn btn--primary">Add to cart</button>
+              <span class="label-text">$12.99</span>
+            </div>
+          </div>
+          <div class="card menu__card">
+            <div class="menu__imgwrapper">
+              <img class="menu__imgburger" src="menu-2.jpg" alt="burger" />
+            </div>
+            <div class="menu__icon">
+              <span class="right">
+                <i class="bi bi-balloon-heart-fill"></i>
+              </span>
+            </div>
+            <div class="menu__card__details">
+              <div class="star_icon_wrapper">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h2>Delicious Food</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+                maxime quia vel placeat alias impedit optio facilis quos, nihil
+                velit? Lorem, ipsum dolor sit amet consectetur adipisicing
+              </p>
+              <button class="btn btn--primary">Add to cart</button>
+              <span class="label-text">$12.99</span>
+            </div>
+          </div>
+          <div class="card menu__card">
+            <div class="menu__imgwrapper">
+              <img class="menu__imgburger" src="menu-3.jpg" alt="burger" />
+            </div>
+            <div class="menu__icon">
+              <span class="right">
+                <i class="bi bi-balloon-heart-fill"></i>
+              </span>
+            </div>
+            <div class="menu__card__details">
+              <div class="star_icon_wrapper">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h2>Delicious Food</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+                maxime quia vel placeat alias impedit optio facilis quos, nihil
+                velit? Lorem, ipsum dolor sit amet consectetur adipisicing
+              </p>
+              <button class="btn btn--primary">Add to cart</button>
+              <span class="label-text">$12.99</span>
+            </div>
+          </div>
+          <div class="card menu__card">
+            <div class="menu__imgwrapper">
+              <img class="menu__imgburger" src="menu-4.jpg" alt="burger" />
+            </div>
+            <div class="menu__icon">
+              <span class="right">
+                <i class="bi bi-balloon-heart-fill"></i>
+              </span>
+            </div>
+            <div class="menu__card__details">
+              <div class="star_icon_wrapper">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h2>Delicious Food</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+                maxime quia vel placeat alias impedit optio facilis quos, nihil
+                velit? Lorem, ipsum dolor sit amet consectetur adipisicing
+              </p>
+              <button class="btn btn--primary">Add to cart</button>
+              <span class="label-text">$12.99</span>
+            </div>
+          </div>
+          <div class="card menu__card">
+            <div class="menu__imgwrapper">
+              <img class="menu__imgburger" src="menu-5.jpg" alt="burger" />
+            </div>
+            <div class="menu__icon">
+              <span class="right">
+                <i class="bi bi-balloon-heart-fill"></i>
+              </span>
+            </div>
+            <div class="menu__card__details">
+              <div class="star_icon_wrapper">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h2>Delicious Food</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+                maxime quia vel placeat alias impedit optio facilis quos, nihil
+                velit? Lorem, ipsum dolor sit amet consectetur adipisicing
+              </p>
+              <button class="btn btn--primary">Add to cart</button>
+              <span class="label-text">$12.99</span>
+            </div>
+          </div>
+          <div class="card menu__card">
+            <div class="menu__imgwrapper">
+              <img class="menu__imgburger" src="menu-6.jpg" alt="burger" />
+            </div>
+            <div class="menu__icon">
+              <span class="right">
+                <i class="bi bi-balloon-heart-fill"></i>
+              </span>
+            </div>
+            <div class="menu__card__details">
+              <div class="star_icon_wrapper">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h2>Delicious Food</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+                maxime quia vel placeat alias impedit optio facilis quos, nihil
+                velit? Lorem, ipsum dolor sit amet consectetur adipisicing
+              </p>
+              <button class="btn btn--primary">Add to cart</button>
+              <span class="label-text">$12.99</span>
+            </div>
+          </div>
+          <div class="card menu__card">
+            <div class="menu__imgwrapper">
+              <img class="menu__imgburger" src="menu-7.jpg" alt="burger" />
+            </div>
+            <div class="menu__icon">
+              <span class="right">
+                <i class="bi bi-balloon-heart-fill"></i>
+              </span>
+            </div>
+            <div class="menu__card__details">
+              <div class="star_icon_wrapper">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h2>Delicious Food</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+                maxime quia vel placeat alias impedit optio facilis quos, nihil
+                velit? Lorem, ipsum dolor sit amet consectetur adipisicing
+              </p>
+              <button class="btn btn--primary">Add to cart</button>
+              <span class="label-text">$12.99</span>
+            </div>
+          </div>
+          <div class="card menu__card">
+            <div class="menu__imgwrapper">
+              <img class="menu__imgburger" src="menu-8.jpg" alt="burger" />
+            </div>
+            <div class="menu__icon">
+              <span class="right">
+                <i class="bi bi-balloon-heart-fill"></i>
+              </span>
+            </div>
+            <div class="menu__card__details">
+              <div class="star_icon_wrapper">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h2>Delicious Food</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+                maxime quia vel placeat alias impedit optio facilis quos, nihil
+                velit? Lorem, ipsum dolor sit amet consectetur adipisicing
+              </p>
+              <button class="btn btn--primary">Add to cart</button>
+              <span class="label-text">$12.99</span>
+            </div>
+          </div>
+          <div class="card menu__card">
+            <div class="menu__imgwrapper">
+              <img class="menu__imgburger" src="menu-9.jpg" alt="burger" />
+            </div>
+            <div class="menu__icon">
+              <span class="right">
+                <i class="bi bi-balloon-heart-fill"></i>
+              </span>
+            </div>
+            <div class="menu__card__details">
+              <div class="star_icon_wrapper">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h2>Delicious Food</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+                maxime quia vel placeat alias impedit optio facilis quos, nihil
+                velit? Lorem, ipsum dolor sit amet consectetur adipisicing
+              </p>
+              <button class="btn btn--primary">Add to cart</button>
+              <span class="label-text">$12.99</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- customer review -->
+
+    <section class="customer__review">
+      <div class="content">
+        <div class="titles">
+          <p class="label-text">Customers Review</p>
+          <h3 class="subtitle-text">What they say</h3>
+        </div>
+
+        <div class="slider__container">
+          <swiper-container
+            pagination="true"
+            pagination-clickable="false"
+            navigation="false"
+            space-between="30"
+            centered-slides="true"
+            autoplay-delay="2500"
+            autoplay-disable-on-interaction="false"
+            slides-per-view="3"
+            class="slider__wrapper"
+          >
+            <swiper-slide class="card customer__card">
+              <div class="card__head">
+                <div class="person__details">
+                  <div>
+                    <img class="card__image" src="pic-1.jpg" alt="" />
+                  </div>
+                  <div class="name__icon">
+                    <span class="name">James</span>
+                    <div class="icon">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="bi__icon">
+                  <i class="bi bi-quote"></i>
+                </div>
+              </div>
+              <div class="card__body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                  minima ipsum distinctio odit, eum laboriosam.
+                </p>
+              </div>
+            </swiper-slide>
+            <swiper-slide class="card customer__card">
+              <div class="card__head">
+                <div class="person__details">
+                  <div>
+                    <img class="card__image" src="pic-2.jpg" alt="" />
+                  </div>
+                  <div class="name__icon">
+                    <span class="name">James</span>
+                    <div class="icon">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="bi__icon">
+                  <i class="bi bi-quote"></i>
+                </div>
+              </div>
+              <div class="card__body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                  minima ipsum distinctio odit, eum laboriosam.
+                </p>
+              </div>
+            </swiper-slide>
+            <swiper-slide class="card customer__card">
+              <div class="card__head">
+                <div class="person__details">
+                  <div>
+                    <img class="card__image" src="pic-3.jpg" alt="" />
+                  </div>
+                  <div class="name__icon">
+                    <span class="name">James</span>
+                    <div class="icon">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="bi__icon">
+                  <i class="bi bi-quote"></i>
+                </div>
+              </div>
+              <div class="card__body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                  minima ipsum distinctio odit, eum laboriosam.
+                </p>
+              </div>
+            </swiper-slide>
+            <swiper-slide class="card customer__card">
+              <div class="card__head">
+                <div class="person__details">
+                  <div>
+                    <img class="card__image" src="pic-4.jpg" alt="" />
+                  </div>
+                  <div class="name__icon">
+                    <span class="name">James</span>
+                    <div class="icon">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="bi__icon">
+                  <i class="bi bi-quote"></i>
+                </div>
+              </div>
+              <div class="card__body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                  minima ipsum distinctio odit, eum laboriosam.
+                </p>
+              </div>
+            </swiper-slide>
+          </swiper-container>
+        </div>
+      </div>
+    </section>
+
+    <!-- order form -->
+    <section class="order__form">
+      <div class="wrapper container">
+        <div class="wrapper__head">
+          <p class="label-text">Order now</p>
+          <h3 class="subtitle-text">Free and fast Delivery</h3>
+        </div>
+        <form class="wrapper__body">
+          <div class="form__inputs">
+            <div class="left">
+              <div class="text__field">
+                <label for="">Your name</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="enter your name"
+                />
+              </div>
+              <div class="text__field">
+                <label for="">Your Order</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="enter food name"
+                />
+              </div>
+              <div class="text__field">
+                <label for="">How Much</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="how many orders"
+                />
+              </div>
+              <div class="text__field">
+                <label for="">Your Address</label>
+                <textarea
+                  placeholder="enter your address"
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+            </div>
+            <div class="right">
+              <div class="text__field">
+                <label for="">Your Number</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="enter your number"
+                />
+              </div>
+              <div class="text__field">
+                <label for="">Additional Food</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="extra with food"
+                />
+              </div>
+              <div class="text__field">
+                <label for="">Date And Time</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="mm/dd/yy,--:-- --"
+                />
+              </div>
+              <div class="text__field">
+                <label for="">Your message</label>
+                <textarea
+                  placeholder="enter your message"
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn--primary">Order now</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer section -->
+
+    <section class="footer">
+      <div class="footer__card container">
+        <div class="footer__information">
+          <h3>Locations</h3>
+          <a href="#">India</a>
+          <a href="#">Japan</a>
+          <a href="#">Russia</a>
+          <a href="#">USA</a>
+          <a href="#">France</a>
+        </div>
+
+        <div class="footer__information">
+          <h3>Quick Links</h3>
+          <a href="#">Home</a>
+          <a href="#">Dishes</a>
+          <a href="#">About</a>
+          <a href="#">Menu</a>
+          <a href="#">Review</a>
+          <a href="#">Order</a>
+        </div>
+
+        <div class="footer__information">
+          <h3>Contact Info</h3>
+          <a href="#">+123-465-7890</a>
+          <a href="#">+111-222-3333</a>
+          <a href="#">Ordernow@Gmail.Com</a>
+          <a href="#">Bestfood@Gmail.Com</a>
+          <a href="#">Mumbai, India 4xxxxx</a>
+        </div>
+
+        <div class="footer__information">
+          <h3>Follow Us</h3>
+          <a href="#">Twitter</a>
+          <a href="#">Linkedin</a>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+        </div>
+
+        <!-- <div class="credit">
+          Copyright @ 2023 By <span>Veerendra Gumate</span>
+        </div> -->
+      </div>
+      <div class="footer__line">
+        <!-- <div class="line"></div> -->
+        <div class="credit container">
+          Copyright @ 2023 By <span>Veerendra Gumate</span>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </body>
+</html>
